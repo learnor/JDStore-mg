@@ -10,7 +10,7 @@
       <ul class="nav navbar-nav navbar-right">
         <% if current_cart.products.any? %>
           <li>
-            <%= link_to "#" do %>
+            <%= link_to cart_path(current_cart) do %>
               <%= fa_icon("shopping-cart", text: "Cart", right: true) %>(<%= current_cart.products.count %>)
           <% end %>
           </li>
