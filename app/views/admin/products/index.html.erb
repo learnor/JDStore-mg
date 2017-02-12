@@ -1,5 +1,5 @@
 <ul>
   <% @products.each do |p| %>
-    <li><%= link_to(p.title, admin_product_path(p)) %></li>
+    <li><%= link_to(p.title, edit_admin_product_path(p)) %></li>
   <% end %>
 </ul>
