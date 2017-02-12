@@ -8,6 +8,13 @@
         <li class="active"><%= link_to("Product", products_path) %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <% if current_cart.products.any? %>
+          <li>
+            <%= link_to "#" do %>
+              <%= fa_icon("shopping-cart", text: "Cart", right: true) %>(<%= current_cart.products.count %>)
+          <% end %>
+          </li>
+        <% end %>
         <% if !current_user %>
           <li><%= link_to(fa_icon("user-plus", text: "Sign Up"), new_user_registration_path) %></li>
           <li><%= link_to(fa_icon("sign-in", text: "Login"), new_user_session_path) %></li>
