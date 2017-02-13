@@ -55,6 +55,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'ransack'
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave
