@@ -4,4 +4,8 @@ class CartsController < ApplicationController
     flash[:warning] = "Cart emptied!"
     redirect_to products_path
   end
+
+  def checkout
+    @order = Order.new
+  end
 end
