@@ -1,5 +1,5 @@
 User.create!([
-  {email: "admin@test.com", encrypted_password: "$2a$11$k6o2s7.fXlV4szXLDeodYuYkP1fwvQQrkHpA971QcnGssPk/Zo186", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2017-02-14 18:17:31", last_sign_in_at: "2017-02-14 18:17:31", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: true}
+  {email: "admin@test.com", password: "000000", password_confirmation: "000000", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2017-02-14 18:17:31", last_sign_in_at: "2017-02-14 18:17:31", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: true}
 ])
 Cart.create!([
   {}
