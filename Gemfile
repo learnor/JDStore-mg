@@ -67,6 +67,7 @@ gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'ransack'
+gem 'aasm'
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave
