@@ -43,6 +43,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   # Use sqlite3 as the database for Active Record
+  gem 'seed_dump'
   gem 'sqlite3'
   # Debug tools
   gem 'awesome_rails_console'

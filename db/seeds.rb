@@ -1,9 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-u = User.create(email: "admin@test.com", password: "000000", password_confirmation: "000000", is_admin: true)
-puts "admin user #{u.email} created, password is #{u.password}"
+User.create!([
+  {email: "admin@test.com", encrypted_password: "$2a$11$k6o2s7.fXlV4szXLDeodYuYkP1fwvQQrkHpA971QcnGssPk/Zo186", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2017-02-14 18:17:31", last_sign_in_at: "2017-02-14 18:17:31", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: true}
+])
+Cart.create!([
+  {}
+])
+Product.create!([
+  {title: "Herman Miller Aeron", description: "程序员神器之坐一天也不会累的椅子。", quantity: 5, price: 999, image: "aeron.jpg"},
+  {title: "Bose QC35", description: "魔音灌耳的消噪耳机。", quantity: 10, price: 399, image: "Bose_qc35.jpg"}
+])
