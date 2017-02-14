@@ -52,6 +52,8 @@ group :development do
   gem 'meta_request'
 end
 
+gem 'letter_opener', group: :development
+
 group :production do
   gem 'pg'
 end
