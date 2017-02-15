@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       end
     end
   end
-  devise_for :users
+  devise_for :users, controllers: { confirmations: 'confirmations'}
   root "welcome#index"
   resources :products do
     member do
