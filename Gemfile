@@ -46,6 +46,8 @@ group :development do
   gem 'seed_dump'
   gem 'sqlite3'
   # Debug tools
+  gem 'guard'
+  gem 'guard-livereload'
   gem 'awesome_rails_console'
   gem 'better_errors'
   gem 'binding_of_caller'

@@ -1,0 +1,64 @@
+html {
+  height: 100%;
+}
+
+body {
+  color: white;
+  // background-color: grey;
+}
+overlay {
+  position: absolute;
+    background: rgba(238,238,238,0);
+    top: 0;
+    width: 100%;
+    height: 2012px;
+    min-height: 100%;
+}
+.content {
+  min-height: calc(100vh - 170px);
+  display: block;
+    background: rgba(238,238,238,0);
+    background-image: url(//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/dulce-339/d0efed7b-hm599jibaqs-cynthia-del-rio.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-style: none;
+    margin: auto;
+    padding-top: 0px;
+    border-radius: 0px;
+    min-width: 960px;
+    height: 2056px;
+}
+.hero {
+  display: block;
+      background: rgba(80,13,101,0.39);
+      background-image: url(//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/dulce-339/d0efed7b-hm599jibaqs-cynthia-del-rio.jpg);
+      background-repeat: no-repeat;
+      background-position: left top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      border-style: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0px;
+      border-radius: 0px;
+      width: 960px;
+      height: 485px;
+      position: relative;
+  text-align: center;
+  // .seal{
+  //   text-align: left;
+  //   background-image: url();
+  // }
+}
+footer {
+  background-color: white;
+  height: 70px;
+  padding: 10px;
+  margin-top: 100px;
+}
