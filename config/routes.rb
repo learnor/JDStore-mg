@@ -11,7 +11,8 @@ Rails.application.routes.draw do
     end
   end
   devise_for :users
-  root "welcome#index"
+  root "welcome#home" 
+
   resources :products do
     member do
       post :add_to_cart
