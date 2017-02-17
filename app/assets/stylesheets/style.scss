@@ -157,6 +157,8 @@ p {
       color: #fff;
   }
 
+
+
   @media(max-width:768px){
       padding:30px;
   }
@@ -173,6 +175,12 @@ p {
         color:#fff;
     }
     p {padding-bottom: 40px;}
+
+    img {
+        height: 150px;
+        // width: 150px;
+        margin-top: 80px;
+    }
 
     .packages {
         padding: 30px;
@@ -308,5 +316,3 @@ p {
             color: #fff !important;
         }
 }
-
- 
