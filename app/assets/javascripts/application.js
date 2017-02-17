@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require gritter
 //= require_tree .
