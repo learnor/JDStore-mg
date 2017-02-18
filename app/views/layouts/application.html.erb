@@ -11,8 +11,8 @@
         <%= yield %>
         <%= render "common/footer" %>
     </body>
-    <%= js add_gritter(flash[:notice],image: :notice, title: "Pirate College Notification", sticky: false) %>
-    <%= extend_gritter position: :bottom_left %>
+    <%= js add_gritter(flash[:notice],image: :notice, title: "Pirate College Notification", sticky: false), extend_gritter position: :bottom_right %>
+    <%=  %>
 </html>
 <script src="js/wow.min.js"></script>
              <script>
