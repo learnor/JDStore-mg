@@ -72,11 +72,11 @@ p {
 /*HEADER*/
 
 .header {
-  height: 600px;
+  height: 800px;
   width: 100%;
   padding: 30px 0 30px;
   margin-top: 50px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcs7h9lep3j31hc0u07b1.jpg);
+  background-image: linear-gradient(rgba(21, 8, 7, 0.75), rgba(0, 0, 0, 0.85)), url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcs7h9lep3j31hc0u07b1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,22 +85,29 @@ p {
   img {
     height: 450px;
     width: 450px;
-    margin: 20px 40px;
+    margin: 120px 40px;
   }
 
   h1 {
     font-size: 40px;
+    .huge {
+      font-size: 72px;
+    }
   }
 
-  h1,
-  p,
-  button {
+  h1 {
+    margin-top: 180px;
+  }
+  p {
     margin-top: 20px;
   }
-
+  button {
+    margin-top: 180px;
+    font-size: 30px;
+  }
   .btn {
-    border-radius: 0;
-    margin: 40px 20px;
+    //border-radius: 0;
+    margin: 140px 20px;
   }
 }
 
@@ -135,14 +142,15 @@ p {
 .services {
   padding: 80px 0;
   text-align: center;
+  background-color: #fff;
 
-  h2, h4 {
-    color: #4c4c4c;
+ h2, h4 {
+    color: #2B1F31;
     margin: 20px 0;
   }
 
   p {
-    color: #737373;
+    color: #2B1F31;
     font-size: 14px;
     padding-bottom: 40px;
   }
@@ -153,33 +161,44 @@ p {
       font-size: 30px;
       padding: 25px;
       border-radius: 50%;
-      background-color: #6699cc;
+      background-color: #D9534F;
       color: #fff;
   }
+
+
 
   @media(max-width:768px){
       padding:30px;
   }
 }
-/*PRICING*/
+/* POP COURSE*/
+.same { }
 
 .pricing {
     padding: 50px 0 80px;
     text-align: center;
-    background-color: #3399ff;
+    background-color: #2B1F31;
 
+    img {
+        height: 150px;
+        // width: 150px;
+        margin-top: 20px;
+    }
     h2,
     p {
         color:#fff;
     }
     p {padding-bottom: 40px;}
 
+
+
     .packages {
         padding: 30px;
-        border: 1px solid #ccc;
+        //border: 1px solid #ccc;
         background-color:  #fff;
         border-radius: 5px;
         margin-top:30px;
+        margin: 0 20px;
     }
     li {
         display: block;
@@ -216,7 +235,7 @@ p {
 
     b,h2,h4 {
         margin: 20 0 20px;
-        color: #4c4c4c;
+        color: #2B1F31;
     }
     p {
         color: #737373;
@@ -232,7 +251,7 @@ p {
         padding: 5px;
         font-size: 17px;
         border-radius: 50%;
-        background-color: #a0db8e;
+        background-color: #5BC0DE;
         color: #fff;
     }
     a:hover {
@@ -242,7 +261,7 @@ p {
     }
 }
 
-/*CLIENT*/
+/*BLOG*/
 
 .client {
     padding: 50px 0 80px;
@@ -275,13 +294,14 @@ p {
 .contact {
     padding: 50px 0 80px;
     text-align: center;
+    background-color: #2B1F31;
 
     p {
         padding-bottom: 80px;
-        color: #737373;
+        color: #DBD8E3;
     }
     h2 {
-        color: #4c4c4c;
+        color: #DBD8E3;
         margin: 20px 0 20px;
     }
     .input-group {
@@ -300,7 +320,7 @@ p {
             border-radius: 0;
             width: 100%;
             font-size: 15px;
-            background-color: #f08080;
+            background-color: #D9534F;
             color: #fff !important;
         }
         .btn:hover {
@@ -308,5 +328,3 @@ p {
             color: #fff !important;
         }
 }
-
- 
