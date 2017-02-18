@@ -1,3 +1,13 @@
-<p>Welcome <%= @email %>!</p>
-<p>You can confirm your account email through the link below:</p>
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p>Hi, <%= @uasername %>!</p>
+
+<h1>欢迎来到海盗学院</h1>
+<p>您现在处于临时激活状态，有效时间10分钟。
+    请点击下面的链接永久激活你的账户:</p>
+<p><%= link_to '确认激活账户', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p>来一起愉快玩耍吧</p>
+
+<h2>请点击下面链接投票支持我们的作品：</h2>
+
+<%= link_to "我要支持", "https://fullstack.xinshengdaxue.com/works/194" %>
+
+<h3>Zion & Maggie 感谢您的支持！以后会有惊喜哦！</h3>
