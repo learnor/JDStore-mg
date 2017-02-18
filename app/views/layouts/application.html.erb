@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JDStoreMg</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <%= render "common/navbar" %>
-      <div class="container">
+    <head>
+        <title>JDStoreMg</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+        <%= render "common/navbar" %>
+        <%= render "common/flashes" %>
         <%= yield %>
-      </div>
-    </div>
-    <%= render "common/footer" %>
+        <%= render "common/footer" %>
+    </body>
     <%= js add_gritter(flash[:notice], title: "Pirate College Notification", sticky: false) %>
-  </body>
 </html>
+<script src="js/wow.min.js"></script>
+             <script>
+             new WOW().init();
+             </script>

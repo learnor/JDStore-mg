@@ -45,6 +45,8 @@ group :development do
   gem 'seed_dump'
   gem 'sqlite3'
   # Debug tools
+  gem 'guard'
+  gem 'guard-livereload'
   gem 'awesome_rails_console'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -60,6 +62,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
+gem 'animate-rails'
+gem 'wow-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'

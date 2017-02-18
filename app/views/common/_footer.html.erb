@@ -1,6 +1,27 @@
-<footer class="container" style="margin-top: 100px;">
-  <p class="text-center">Copyright &copy;2017 Designed
-    <br>
-    <%= link_to("Zion & Maggie", "http://zion.logdown.com") %>
-  </p>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        Copyright &copy;2017
+        <%= fa_icon("ship", text: "Designed by") %>
+        <%= link_to("Zion & Maggie", "http://zion.logdown.com") %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to(fa_icon("weibo", text: "官方微博"),"#") %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to(fa_icon("wechat", text: "微信公号"),"#") %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to(fa_icon("question", text: "常见问题"),"#") %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to(fa_icon("comments", text: "联系我们"),"#") %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to(fa_icon("info", text: "关于我们"),"#") %>
+      </div>
+      <br>
+    </div>
+  </div>
 </footer>
