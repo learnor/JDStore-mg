@@ -81,6 +81,28 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  # Do not dump schema after migrations.
+# Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.default_url_options = { :host => 'http://piratecollege.herokuapp.com'}
+
+  # config.action_mailer.delivery_method = :smtp
+  # ActionMailer::Base.smtp_settings = {
+  #   address: "smtpcloud.sohu.com",
+  #   port: 25,
+  #   domain: "heroku.com",
+  #   authentication: "login",
+  #   enable_starttls_auto: true,
+  #   user_name: ENV["SEND_CLOUD_USER_NAME"],    #api_user
+  #   password: ENV["SEND_CLOUD_USER_KEY"]       #api_key
+  #   }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'piratecollege.herokuapp.com', #eg: 'yourappname.herokuapp.com'
+    :authentication => :plain,
+    }
 end
