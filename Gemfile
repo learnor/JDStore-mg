@@ -70,6 +70,7 @@ gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'ransack'
+gem 'gritter'
 gem 'aasm'
 
 # TODO: use Clearance to replace device

@@ -18,4 +18,5 @@
 //= require bootstrap/carousel
 //= require bootstrap/collapse
 //= require wow
+//= require gritter
 //= require_tree .

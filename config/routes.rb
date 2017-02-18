@@ -10,9 +10,8 @@ Rails.application.routes.draw do
       end
     end
   end
-  devise_for :users
-  root "welcome#home" 
-
+  devise_for :users, controllers: { confirmations: 'confirmations'}
+  root "welcome#index"
   resources :products do
     member do
       post :add_to_cart
@@ -33,6 +32,7 @@ Rails.application.routes.draw do
     end
   end
   namespace :account do
-    resources :orders
+    resources :orders, :favorites, only: [:index]
   end
+  resources :favorites, only: [:create, :destroy]
 end
