@@ -16,6 +16,11 @@
         <% end %>
       <% end %>
       <%= p.title %> $ <%= p.price %>
+      <% if current_user.favorites.where(product: p).empty? %>
+      <%= link_to("Favorite", favorites_path(product_id: p), method: :post) %>
+      <% else %>
+      <%= link_to("Unfavorite", favorite_path(p), method: :delete) %>
+      <% end %>
     </div>
   <% end %>
 </div>
