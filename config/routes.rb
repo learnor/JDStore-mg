@@ -32,6 +32,7 @@ Rails.application.routes.draw do
     end
   end
   namespace :account do
-    resources :orders
+    resources :orders, :favorites, only: [:index]
   end
+  resources :favorites, only: [:create, :destroy]
 end
