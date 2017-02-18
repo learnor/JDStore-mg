@@ -26,6 +26,8 @@
         <td><%= p.title %></td>
         <td><%= p.price %></td>
         <td><%= link_to("Edit", edit_admin_product_path(p)) %></td>
+        <br>
+        <td><%= link_to("delete", admin_product_path(p), method: :delete) %></td>
       </tr>
     <% end %>
   </tbody>
