@@ -42,6 +42,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   # Use sqlite3 as the database for Active Record
+  gem 'seed_dump'
   gem 'sqlite3'
   # Debug tools
   gem 'awesome_rails_console'
@@ -49,6 +50,8 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
 end
+
+gem 'letter_opener', group: :development
 
 group :production do
   gem 'pg'
@@ -64,6 +67,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'ransack'
 gem 'gritter'
+gem 'aasm'
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave

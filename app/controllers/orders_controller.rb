@@ -3,12 +3,10 @@ class OrdersController < ApplicationController
 
   def create
     @order = Order.new(order_params)
-    @order.user_id = current_user
+    @order.user = current_user
     @order.total = current_cart.total_price
 
     if @order.save
-      redirect_to order_path(@order.token)
-
       current_cart.cart_items.each do |cart_item|
         product_list = ProductList.new
         product_list.order = @order
@@ -17,6 +15,10 @@ class OrdersController < ApplicationController
         product_list.quantity = cart_item.quantity
         product_list.save
       end
+      current_cart.clean!
+      OrderMailer.notify_order_placed(@order).deliver!
+
+      redirect_to order_path(@order.token), notice: "Order placed, please pay with either alipay or wechat"
     else
       render 'carts/checkout'
     end
@@ -24,7 +26,30 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find_by_token(params[:id])
-    @product_list = @order.product_lists
+    @product_lists = @order.product_lists
+  end
+
+  def pay_with_alipay
+    @order = Order.find_by_token(params[:id])
+    @order.set_payment_with!("alipay")
+    @order.make_payment!
+
+    redirect_to order_path(@order.token), notice: "使用支付宝付款成功"
+  end
+
+  def pay_with_wechat
+    @order = Order.find_by_token(params[:id])
+    @order.set_payment_with!("alipay")
+    @order.make_payment!
+
+    redirect_to order_path(@order.token), notice: "使用微信付款成功"
+  end
+
+  def apply_to_cancel
+    @order = Order.find(params[:id])
+    OrderMailer.apply_cancel(@order).deliver!
+    flash[:notice] = "已提交申请取消订单"
+    redirect_to :back
   end
 
   private
