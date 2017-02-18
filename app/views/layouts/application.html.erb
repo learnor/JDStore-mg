@@ -7,8 +7,10 @@
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
     <body>
-        <%= render "common/navbar" %>
-        <%= yield %>
+        <div class="contaner content">
+            <%= render "common/navbar" %>
+            <%= yield %>
+        </div>
         <%= render "common/footer" %>
     </body>
     <%= js add_gritter(flash[:notice],image: :notice, title: "Pirate College Notification", sticky: false), extend_gritter(position: :bottom_right) %>

@@ -49,7 +49,17 @@ p {
   color: #3c3c3c !important;
   border: 1px solid #fff !important;
 }
-
+.content {
+  min-height: calc(100vh - 70px);
+}
+.footer {
+  height: 50px;
+  padding: 10px;
+  .foot-link {
+      margin-left: 10px;
+      display: inline-block;
+  }
+}
 // NAVIGATION
 
 .navbar {
