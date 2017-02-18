@@ -72,6 +72,8 @@ gem 'mini_magick'
 gem 'ransack'
 gem 'gritter'
 gem 'aasm'
+gem 'figaro'
+gem 'fog-aws'
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave
