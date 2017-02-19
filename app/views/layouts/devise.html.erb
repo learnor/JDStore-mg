@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JDStoreMg</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+        <div class="contaner content">
+            <%= render "common/navbar" %>
+            <!-- Header -->
+            <div id="login" class="login">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <%= yield %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%= render "common/footer" %>
+    </body>
+    <%= js add_gritter(flash[:notice],image: :notice, title: "Pirate College Notification", sticky: false), extend_gritter(position: :bottom_right) %>
+    <%=  %>
+</html>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>

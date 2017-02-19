@@ -1,13 +1,14 @@
-<p>Hi, <%= @uasername %>!</p>
-
+<% require 'devise/version' %>
+<p><%= t('.greeting', recipient: @resource.username) %></p>
 <h1>欢迎来到海盗学院</h1>
 <p>您现在处于临时激活状态，有效时间10分钟。
     请点击下面的链接永久激活你的账户:</p>
-<p><%= link_to '确认激活账户', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p><%= t('.instruction') %></p>
+<p><%= link_to t('.action'), confirmation_url(@resource, confirmation_token: (Devise::VERSION.start_with?('3.') ? @token : @resource.confirmation_token)) %></p>
+<br>
 <p>来一起愉快玩耍吧</p>
-
 <h2>请点击下面链接投票支持我们的作品：</h2>
 
-<%= link_to "我要支持", "https://fullstack.xinshengdaxue.com/works/194" %>
+<%= link_to "我要支持", "https://fullstack.xinshengdaxue.com/works/194", class: "btn btg-lg btn-danger" %>
 
 <h3>Zion & Maggie 感谢您的支持！以后会有惊喜哦！</h3>

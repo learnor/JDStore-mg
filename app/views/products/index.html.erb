@@ -1,26 +1,28 @@
 <div class="row">
-  <div class="search">
-    <%= search_form_for @q, :builder => SimpleForm::FormBuilder do |f| %>
-      <%= f.label :Search%>
-      <%= f.search_field :title_or_description_cont %>
-    <% end %>
-  </div>
-  <hr>
-  <% @products.each do |p| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(p) do %>
-        <% if p.image.present? %>
-          <%= image_tag(p.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+    <div class="container">
+        <div class="search">
+          <%= search_form_for @q, :builder => SimpleForm::FormBuilder do |f| %>
+            <%= f.label :Search%>
+            <%= f.search_field :title_or_description_cont %>
+          <% end %>
+        </div>
+        <hr>
+        <% @products.each do |p| %>
+          <div class="col-xs-6 col-md-3">
+            <%= link_to product_path(p) do %>
+              <% if p.image.present? %>
+                <%= image_tag(p.image.thumb.url, class: "thumbnail") %>
+              <% else %>
+                <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+              <% end %>
+            <% end %>
+            <%= p.title %> $ <%= p.price %>
+            <% if current_user.favorites.where(product: p).empty? %>
+            <%= link_to("收藏", favorites_path(product_id: p), method: :post) %>
+            <% else %>
+            <%= link_to("取消收藏", favorite_path(p), method: :delete) %>
+            <% end %>
+          </div>
         <% end %>
-      <% end %>
-      <%= p.title %> $ <%= p.price %>
-      <% if current_user.favorites.where(product: p).empty? %>
-      <%= link_to("Favorite", favorites_path(product_id: p), method: :post) %>
-      <% else %>
-      <%= link_to("Unfavorite", favorite_path(p), method: :delete) %>
-      <% end %>
     </div>
-  <% end %>
 </div>

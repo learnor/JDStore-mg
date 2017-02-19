@@ -84,6 +84,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.1.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -205,6 +206,9 @@ GEM
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails-i18n (5.0.3)
+      i18n (~> 0.7)
+      railties (~> 5.0)
     railties (5.0.1)
       actionpack (= 5.0.1)
       activesupport (= 5.0.1)
@@ -282,6 +286,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.2)
   devise
+  devise-i18n
   figaro
   fog-aws
   font-awesome-rails
@@ -297,6 +302,7 @@ DEPENDENCIES
   pg
   puma (~> 3.0)
   rails (~> 5.0.1)
+  rails-i18n
   ransack
   sass-rails (~> 5.0)
   seed_dump
