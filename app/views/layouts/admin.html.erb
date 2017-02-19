@@ -23,4 +23,6 @@
     </div>
     <%= render "common/footer" %>
   </body>
+  <%= js add_gritter(flash[:notice],image: :notice, title: "海盗学院：", sticky: false), extend_gritter(position: :bottom_right) %>
 </html>
+<script>new WOW().init();</script>
