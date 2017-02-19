@@ -10,7 +10,8 @@ class FavoritesController < ApplicationController
     end
 
     def destroy
-        Favorite.where(product: @product, user: current_user).first.destroy
+        @favorite = Favorite.find_by(user: current_user,product: @product)
+        @favorite.destroy
         redirect_to :back, alert: "Removed product #{@product.title} from favorite"
     end
 

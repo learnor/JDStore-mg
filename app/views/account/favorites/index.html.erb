@@ -7,18 +7,18 @@
     </tr>
   </thead>
   <tbody>
-    <% @favorite_products.each do |p| %>
+    <% @favorites.each do |fav| %>
       <tr>
         <td>
-            <%= link_to product_path(p) do %>
-              <% if p.image.present? %>
-                <%= image_tag(p.image.thumb.url, class: "thumbnail") %>
+            <%= link_to product_path(fav.product) do %>
+              <% if fav.product.image.present? %>
+                <%= image_tag(fav.product.image.thumb.url, class: "thumbnail") %>
               <% else %>
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
             <% end %>
-            <%= p.title %> $ <%= p.price %></td>
-        <td><%= link_to("Unfavorite", favorite_path(p), method: :delete) %></td>
+            <%= fav.product.title %> $ <%= fav.product.price %></td>
+        <td><%= link_to("Unfavorite", favorite_path(fav.product), method: :delete) %></td>
       </tr>
     <% end %>
   </tbody>
