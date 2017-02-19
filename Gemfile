@@ -74,6 +74,8 @@ gem 'gritter'
 gem 'aasm'
 gem 'figaro'
 gem 'fog-aws'
+gem 'rails-i18n'
+gem 'devise-i18n'
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave
