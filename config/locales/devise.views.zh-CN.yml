@@ -34,7 +34,7 @@ zh-CN:
       confirmation_instructions:
         action: "确认我的帐户"
         greeting: "欢迎 %{recipient}!"
-        instruction: "您现在处于临时激活状态，有效时间10分钟。您可以通过下面的链接确认您的帐户的电子邮件:"
+        instruction: "您可以通过下面的链接确认您的帐户的电子邮件:"
         subject: "确认信息"
       password_change:
         greeting:
