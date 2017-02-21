@@ -9,6 +9,7 @@
       <th width="220">Product Pic</th>
       <th>Name</th>
       <th>Price</th>
+      <th>Category</th>
       <th width="100">Options</th>
     </tr>
   </thead>
@@ -25,6 +26,7 @@
           <% end %></td>
         <td><%= p.title %></td>
         <td><%= p.price %></td>
+        <td><%= p.category.name %></td>
         <td><%= link_to("Edit", edit_admin_product_path(p)) %>
         <br>
         <%= link_to("Delete", admin_product_path(p), method: :delete) %></td>
