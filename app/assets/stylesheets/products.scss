@@ -1,3 +1,83 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.spacing-top {
+  padding-top: 3em;
+}
+
+.banner {
+  min-height: 150px;
+
+  // background-color: grey;
+
+  h1 {
+    font-size: 3em;
+    font-weight: 300;
+
+    .lead {
+      font-size: 1em;
+      font-weight: 700;
+    }
+  }
+}
+
+.search {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #dce0e0;
+
+  // background-color: lightblue;
+
+  .search_form {
+    display: inline;
+    min-width: 800px;
+    margin: 0 auto;
+  }
+
+  .search_form_content {
+    display: table-cell;
+    width: 70%;
+  }
+
+  .search_field {
+    display: table-cell;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .search_field:focus {
+    border-bottom: 1px solid #0af;
+  }
+
+  .search_form_button {
+    display: table-cell;
+    max-width: 250px;
+    padding-left: 20px;
+  }
+}
+
+.nav-tabs li a {
+  color: #666;
+}
+
+.thumbnail {
+  display: block;
+  padding: .25em;
+  margin-bottom: 1.25em;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+#myCarousel {
+  height: 350px;
+}

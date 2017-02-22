@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
 
 body {
@@ -51,7 +52,7 @@ p {
   border: 1px solid #fff !important;
 }
 .content {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 50px);
 }
 .footer {
   height: 50px;
