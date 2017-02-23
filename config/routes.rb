@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :favorites, only: [:create, :destroy]
+  namespace :account do
+    resources :orders, :favorites, only: [:index]
+    # resources :profiles, only: [:show, :edit, :update]
+    get 'profiles/:username', to: 'profiles#show', as: :profile
+    get 'profiles/:username/edit', to: 'profiles#edit', as: :edit_profile
+    patch 'profiles/:username/edit', to: 'profiles#update', as: :update_profile
+  end
+
   namespace :admin do
     resources :categories
     resources :products
@@ -32,8 +41,8 @@ Rails.application.routes.draw do
       post :apply_to_cancel
     end
   end
-  namespace :account do
-    resources :orders, :favorites, only: [:index]
-  end
-  resources :favorites, only: [:create, :destroy]
+
+  # patch ':username/edit', to: 'profiles#update', as: :update_profile
+  # get ':username/edit', to: 'profiles#edit', as: :edit_profile
+  # get ':username', to: 'account/profiles#show', as: :profile
 end
