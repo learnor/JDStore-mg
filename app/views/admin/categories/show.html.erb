@@ -1,6 +1,0 @@
-<h2>Edit Category</h2>
-<%= simple_form_for [:admin, @catetory] do |f| %>
-  <div class="group"><%= f.input :name %></div>
-  <div class="group"><%= f.input :description %></div>
-  <%= f.submit "Submit", data: { disable_with: "Submitting..."} %>
-<% end %>
