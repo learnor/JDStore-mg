@@ -20,7 +20,7 @@ Rails.application.routes.draw do
       end
     end
   end
-  
+
   devise_for :users, controllers: { confirmations: 'confirmations'}
   root "welcome#home"
   resources :products do
@@ -28,7 +28,7 @@ Rails.application.routes.draw do
       post :add_to_cart
     end
   end
-  
+
   resources :carts do
     collection do
       delete :clean

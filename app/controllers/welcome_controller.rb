@@ -6,7 +6,7 @@ class WelcomeController < ApplicationController
   def home
 
   end
-  def profile
+  def change
 
   end
 end
