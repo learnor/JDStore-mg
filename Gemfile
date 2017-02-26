@@ -77,6 +77,7 @@ gem 'fog-aws'
 gem 'rails-i18n'
 gem 'devise-i18n'
 gem 'paperclip'
+gem "intercom-rails"
 
 # TODO: use Clearance to replace device
 # TODO: use paperclip to replace carrierwave
