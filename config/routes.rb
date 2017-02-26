@@ -23,6 +23,8 @@ Rails.application.routes.draw do
 
     devise_for :users, controllers: { confirmations: 'confirmations' }
     root 'welcome#home'
+    get 'change' => 'welcome#change'
+    get 'sail' => 'welcome#sail'
     resources :products do
         member do
             post :add_to_cart
@@ -43,7 +45,4 @@ Rails.application.routes.draw do
             post :apply_to_cancel
         end
     end
-
-    get 'change' => 'welcome#change'
-    get 'sail' => 'welcome#sail'
 end
