@@ -35,9 +35,12 @@
                                 <li>
                                     <%= link_to("Admin Panel", admin_products_path) %>
                                 </li>
-                            <% end %>
-                            <li><%= link_to("My Favorites", account_favorites_path) %></li>
+                            <% else %>
+                            <li><%= link_to('Profile', account_profile_path(current_user.username)) %></li>
                             <li><%= link_to("Order History", account_orders_path) %></li>
+                            <li><%= link_to("My Favorites", account_favorites_path) %></li>
+                            <% end %>
+                            <li class="devider" role="separator"></li>
                             <li><%= link_to(fa_icon("sign-out", text: "Logout"), destroy_user_session_path, method: :delete) %></li>
                         </ul>
                     </li>
