@@ -1,0 +1,20 @@
+<h1>Account::Profiles#show</h1>
+<p>Find me in app/views/account/profiles/show.html.erb</p>
+<div class="row profile-header">
+  <div class="col-md-6">
+    <div class="img-circle"><%= profile_avatar_select(@user) %></div>
+  </div>
+  <div class="col-md-6">
+    <div class="user-name-and-follow">
+      <h3 class="profile-username"><%= @user.username %></h3>
+      <span>
+        <% if @user == current_user %>
+          <%= link_to("Edit Profile", account_edit_profile_path(@user.username), class: "btn edit-button") %>
+        <% end %>
+      </span>
+    </div>
+    <p class="profile-cell-number"><%= @user.cell_number %></p>
+    <p class="profile-wechat-id"><%= @user.wechat_id %></p>
+    <p class="profile-address"><%= @user.address %></p>
+  </div>
+</div>
