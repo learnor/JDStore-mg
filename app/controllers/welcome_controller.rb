@@ -9,4 +9,8 @@ class WelcomeController < ApplicationController
   def change
 
   end
+  
+  def sail
+
+  end
 end
