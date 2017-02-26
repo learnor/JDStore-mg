@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     end
     devise_for :users, controllers: { confirmations: 'confirmations' }
     root 'welcome#home'
-    get 'profile' => 'welcome#profile'
+    get 'change' => 'welcome#change'
     resources :products do
         member do
             post :add_to_cart
