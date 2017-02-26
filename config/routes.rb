@@ -20,6 +20,7 @@ Rails.application.routes.draw do
       end
     end
   end
+  
   devise_for :users, controllers: { confirmations: 'confirmations'}
   root "welcome#home"
   resources :products do
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
       post :add_to_cart
     end
   end
+  
   resources :carts do
     collection do
       delete :clean
@@ -42,7 +44,5 @@ Rails.application.routes.draw do
     end
   end
 
-  # patch ':username/edit', to: 'profiles#update', as: :update_profile
-  # get ':username/edit', to: 'profiles#edit', as: :edit_profile
-  # get ':username', to: 'account/profiles#show', as: :profile
+  get 'change' => 'welcome#change'
 end
