@@ -10,18 +10,19 @@
   color: #fff;
 
   h1 {
-    font-size: 90px;
     .huge {
       font-size: 120px;
     }
   }
 
   h1 {
+    font-size: 90px;
+
     margin-top: 180px;
   }
   p {
     margin-top: 20px;
-    font-size: 36px;
+    font-size: 54px;
   }
   button {
     margin-top: 180px;
