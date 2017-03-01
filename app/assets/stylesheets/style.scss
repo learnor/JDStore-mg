@@ -10,6 +10,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+
+    background-color: #CCCCCC;
 }
 
 li {
@@ -114,6 +116,7 @@ p {
   h1 {
     margin-top: 180px;
   }
+
   p {
     margin-top: 20px;
     font-size: 36px;
