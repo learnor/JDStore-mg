@@ -11,7 +11,7 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 
-    background-color: #CCCCCC;
+    background-color: #F8F9F9;
 }
 
 li {
@@ -171,11 +171,12 @@ p {
  h2, h4 {
     color: #2B1F31;
     margin: 20px 0;
+    font-size: 56px;
   }
 
   p {
     color: #2B1F31;
-    font-size: 14px;
+    font-size: 28px;
     padding-bottom: 40px;
   }
 
@@ -212,8 +213,13 @@ p {
     p {
         color:#fff;
     }
-    p {padding-bottom: 40px;}
-
+    p {
+      padding-bottom: 40px;
+font-size: 28px;
+    }
+    h2 {
+      font-size: 56px;
+    }
 
 
     .packages {
