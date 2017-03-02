@@ -60,11 +60,14 @@
                 <% @products.each do |product| %>
                   <div class="col-xs-10 col-sm-6 col-md-6" style="margin-bottom: 30px;">
                     <%= render_product_image(product) %>
-                    <%= product.title %><span class="pull-right"><% if current_user.favorites.where(product: product).empty? %>
+                    <%= product.title %>
+                    <% if current_user %>
+                    <span class="pull-right"><% if current_user.favorites.where(product: product).empty? %>
                     <%= link_to("收藏", favorites_path(product_id: product), method: :post) %>
                     <% else %>
                     <%= link_to("取消收藏", favorite_path(product), method: :delete) %>
                     <% end %></span>
+                    <% end %>
                   </div>
                 <% end %>
                 <div class=" text-center" style="padding-bottom: 30px;">
@@ -83,11 +86,14 @@
                   <% instance_variable_get("@products_#{c.id}").each do |product| %>
                     <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6" style="margin-bottom: 30px;">
                       <%= render_product_image(product) %>
-                      <%= product.title %><span class="pull-right"><% if current_user.favorites.where(product: product).empty? %>
+                      <%= product.title %>
+                      <% if current_user %>
+                      <span class="pull-right"><% if current_user.favorites.where(product: product).empty? %>
                       <%= link_to("收藏", favorites_path(product_id: product), method: :post) %>
                       <% else %>
                       <%= link_to("取消收藏", favorite_path(product), method: :delete) %>
                       <% end %></span>
+                      <% end %>
                     </div>
                   <% end %>
                 </div>
