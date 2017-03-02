@@ -136,6 +136,8 @@ GEM
       multi_json (~> 1.8)
     http_parser.rb (0.6.0)
     i18n (0.8.0)
+    intercom-rails (0.3.4)
+      activesupport (> 3.0)
     ipaddress (0.8.3)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -303,6 +305,7 @@ DEPENDENCIES
   gritter
   guard
   guard-livereload
+  intercom-rails
   jbuilder (~> 2.5)
   jquery-rails
   letter_opener
