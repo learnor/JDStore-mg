@@ -1,0 +1,51 @@
+.header3 {
+  height: 660px;
+  width: 100%;
+  padding: 30px 0 30px;
+  // margin-top: 50px;
+  background-image: linear-gradient(rgba(21, 8, 7, 0.1), rgba(0, 0, 0, 0.1)), url(https://ww4.sinaimg.cn/large/006tKfTcgy1fd7jygiajej31bs0jwtb6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  h1 {
+    .huge {
+      font-size: 120px;
+    }
+  }
+
+  h1 {
+    font-size: 90px;
+
+    margin-top: 180px;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 54px;
+  }
+  button {
+    margin-top: 180px;
+    font-size: 30px;
+  }
+  .btn {
+    //border-radius: 0;
+    margin: 140px 20px;
+  }
+
+}
+
+.container-1 {
+    padding: 80px 120px;
+}
+
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+.person:hover {
+    border-color: #f1f1f1;
+}

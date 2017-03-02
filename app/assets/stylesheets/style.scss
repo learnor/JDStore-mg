@@ -10,6 +10,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+
+    background-color: #F8F9F9;
 }
 
 li {
@@ -92,7 +94,7 @@ p {
   width: 100%;
   padding: 30px 0 30px;
   // margin-top: 50px;
-  background-image: linear-gradient(rgba(21, 8, 7, 0.75), rgba(0, 0, 0, 0.85)), url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcs7h9lep3j31hc0u07b1.jpg);
+  background-image: linear-gradient(rgba(21, 8, 7, 0.1), rgba(0, 0, 0, 0.1)), url( https://ww2.sinaimg.cn/large/006tKfTcgy1fd6aphw3lyj31co0p8tar.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,17 +107,19 @@ p {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 90px;
     .huge {
-      font-size: 72px;
+      font-size: 120px;
     }
   }
 
   h1 {
     margin-top: 180px;
   }
+
   p {
     margin-top: 20px;
+    font-size: 36px;
   }
   button {
     margin-top: 180px;
@@ -167,11 +171,12 @@ p {
  h2, h4 {
     color: #2B1F31;
     margin: 20px 0;
+    font-size: 56px;
   }
 
   p {
     color: #2B1F31;
-    font-size: 14px;
+    font-size: 28px;
     padding-bottom: 40px;
   }
 
@@ -208,8 +213,13 @@ p {
     p {
         color:#fff;
     }
-    p {padding-bottom: 40px;}
-
+    p {
+      padding-bottom: 40px;
+font-size: 28px;
+    }
+    h2 {
+      font-size: 56px;
+    }
 
 
     .packages {
@@ -355,7 +365,7 @@ p {
     height: 800px;
     width: 100%;
     padding: 30px 0 30px;
-    background-image: linear-gradient(rgba(21, 8, 7, 0.75), rgba(0, 0, 0, 0.85)), url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcs7h9lep3j31hc0u07b1.jpg);
+    background-image: linear-gradient(rgba(21, 8, 7, 0.75), rgba(0, 0, 0, 0.75)), url(https://ww1.sinaimg.cn/large/006tNbRwgy1fcs7h9lep3j31hc0u07b1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -2,16 +2,23 @@
 <div id="header" class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 wow bounceInLeft">
+            <div class="col-lg-12 col-md-12 wow bounceInLeft">
+                <h2 class="site-name text-center">海盗学院<span>Pirate College</span></h2>
                 <h1 class="wow fadeInUp text-center"> 探索未<span class="huge"> 知, </span> 创造奇迹</h1>
                 <p class="text-center">用知识和行动颠覆平庸，用有限生命创造无限价值</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="text-center ">
-                  <%= link_to("登 船 出 海",products_path, class:"btn btn-lg btn-danger") %>
+                    <%= link_to("登 船 出 海",products_path, class:"btn btn-lg btn-danger") %>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 wow bounceInRight">
+            <!-- <div class="col-lg-6 col-md-6 wow bounceInRight">
                 <%= image_tag("pirate_ship.png") %>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -24,18 +31,18 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="1.8s"><%= fa_icon("desktop") %>
                 <h4>1</h4>
-                <p>火箭般飞速个人成长</p>
-                <p>颠覆对世界的认知</p>
+                <p>一整年不断迭代的行动课</p>
+                <p>得到更多弯道超车的法门</p>
             </div>
             <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="1.4s"><%= fa_icon("mobile") %>
                 <h4>2</h4>
-                <p>勇于用知识武装头脑</p>
-                <p>用行动探索的队友</p>
+                <p>强互动的课程设计</p>
+                <p>让你不觉间进入状态</p>
             </div>
             <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.8s"><%= fa_icon("database") %>
                 <h4>3</h4>
-                <p>一票奇迹践行者</p>
-                <p>倾心分享成功经验</p>
+                <p>即学即用的高效行动技巧</p>
+                <p>让你的只是发挥最大功效</p>
             </div>
         </div>
     </div>
@@ -43,105 +50,109 @@
 <!-- End Services -->
 <!-- Pricing -->
 <div class="same">
+    <div id="pricing" class="pricing">
+        <div class="container">
+            <div class="row">
+                <h2 class="wow fadeInUp">最 新 课 程</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">实 力 派 演 绎</p>
+                <div class="col-md-4 wow flipInY" data-wow-delay="0.8s">
+                    <div class="packages">
 
-
-<div id="pricing" class="pricing">
-    <div class="container">
-        <div class="row">
-            <h2 class="wow fadeInUp">最新课程</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s">实 力 派 演 绎</p>
-            <div class="col-md-4 wow flipInY" data-wow-delay="0.8s">
-                <div class="packages">
-                    <%= image_tag("路飞1.png") %>
-                    <h4>非虚构类阅读专修班</h4>
-                    <h4>船长：年读500本阅读大神</h4>
-                    <h1>399元</h1>
-                    <b>3月？日出海</b>
-                    <hr>
-                    <li>已有998船员</li>
-                    <li>每月 1 期</li>
-                    <li>线上直播</li>
-
-                    <button class="btn btn-danger">买票上船</button>
+                        <h4>非虚构类阅读专修班</h4>
+                        <h4>船长：阅读大神</h4>
+                        <h1>399元</h1>
+                        <b>3月？日出海</b>
+                        <hr>
+                        <li>已有0船员</li>
+                        <li>每月 1 期</li>
+                        <li>线上直播</li>
+                        <button class="btn btn-danger">正在造船</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 wow flipInY" data-wow-delay="0.8s">
-                <div class="packages">
-                    <%= image_tag("路飞2.png") %>
-                    <h4>7天文案标题党特训班</h4>
-                    <h4>船长：标题党神奇路飞</h4>
-                    <h1>199元</h1>
-                    <b>3月2日出海</b>
-                    <hr>
-                    <li>已有689船员</li>
-                    <li>每月 2 期</li>
-                    <li>线上直播</li>
+                <div class="col-md-4 wow flipInY" data-wow-delay="0.8s">
+                    <div class="packages">
 
-                    <button class="btn btn-danger">买票上船</button>
+                        <h4>7天文案标题党特训班</h4>
+                        <h4>船长：标题党神奇路飞</h4>
+                        <h1>199元</h1>
+                        <b>3月2日出海</b>
+                        <hr>
+                        <li>已有0船员</li>
+                        <li>每月 2 期</li>
+                        <li>线上直播</li>
+                        <button class="btn btn-danger">正在造船</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 wow flipInY" data-wow-delay="0.8s">
-                <div class="packages">
-                    <%= image_tag("路飞3.png") %>
-                    <h4>英语神速增长班</h4>
-                    <h4>船长：传说中的34门外语精通者</h4>
-                    <h1>99元</h1>
-                    <b>3月？日出海</b>
-                    <hr>
-                    <li>已有896船员</li>
-                    <li>每月 1 期</li>
-                    <li>线上直播</li>
+                <div class="col-md-4 wow flipInY" data-wow-delay="0.8s">
+                    <div class="packages">
 
-                    <button class="btn btn-danger">买票上船</button>
+                        <h4>超级行动训练营</h4>
+                        <h4>船长：乌龙明月</h4>
+                        <h1>299元</h1>
+                        <b>3月20日出海</b>
+                        <hr>
+                        <li>已有6船员</li>
+                        <li>每月 2 期</li>
+                        <li>线上直播</li>
+                        <div class="text-center ">
+                            <%= link_to("买票上船",products_path, class:"btn btn-lg btn-success") %>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Pricing -->
-<!-- Team -->
-<div id="team" class="team">
-    <div class="container">
-        <row>
-            <h2 class="wow fadeInUp">奇迹论坛</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s">晒一晒你的收获</p>
-            <div class="col-md-4 wow fadeInLeft" data-wow-delay="2s">
-                <%= image_tag("xdite.png", class: "img-circle") %>
-                <h4> XDite</h4>
-                <b>Mater级别神人</b>
-                <p> 我在线上跟语言达人学习Houston腔的英语，已经彻底治好了我的台湾英语口音，连扎克伯格都说地道，偷笑中 。</p>
-                <%= link_to(fa_icon("facebook"),'#') %>
-                <%= link_to(fa_icon("twitter"),'#') %>
-                <%= link_to(fa_icon("linkedin"),'#') %>
-                <%= link_to(fa_icon("pinterest"),'#') %>
-            </div>
-            <div class="col-md-4 wow fadeInLeft" data-wow-delay="1.6s">
-                <%= image_tag("mg.png", class: "img-circle") %>
-                <h4>乌龙明月</h4>
-                <b>新晋程序媛</b>
-                <p> 在跟读书狂人学读非虚构类的书籍后，一天啃掉8本书，奇迹般的提升了敲代码解bug的速度。感觉大脑用着越来越顺手了</p>
-                <%= link_to(fa_icon("facebook"),'#') %>
-                <%= link_to(fa_icon("twitter"),'#') %>
-                <%= link_to(fa_icon("linkedin"),'#') %>
-                <%= link_to(fa_icon("pinterest"),'#') %>
-            </div>
-            <div class="col-md-4 wow fadeInLeft" data-wow-delay="1.2s">
-                <%= image_tag("yy.png", class: "img-circle") %>
-                <h4>YY</h4>
-                <b>全栈营讲师</b>
-                <p> 一个月前，我跟标题党学写文案，20天竟然能够写出一本书，我都不知道怎么做到的</p>
-                <%= link_to(fa_icon("facebook"),'#') %>
-                <%= link_to(fa_icon("twitter"),'#') %>
-                <%= link_to(fa_icon("linkedin"),'#') %>
-                <%= link_to(fa_icon("pinterest"),'#') %>
-            </div>
-        </row>
+    <!-- End Pricing -->
+    <!-- Team -->
+    <div id="team" class="team">
+        <div class="container">
+            <row>
+                <h2 class="wow fadeInUp">学 员 反 馈</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">听他们的体验</p>
+                <div class="col-md-4 wow fadeInLeft" data-wow-delay="2s">
+                    <%= image_tag("路飞1.png", class: "img-circle") %>
+                    <h4> A同学</h4>
+                    <b>上市企业HR总监</b>
+                    <br>
+                    <b> 这是我加入过的最好的学习组织，不仅打消了我短时间不能很好获得成长的疑虑，还让我在行动中变得更加自信了。</b>
+                    <br>
+                    <%= link_to(fa_icon("facebook"),'#') %>
+                    <%= link_to(fa_icon("twitter"),'#') %>
+                    <%= link_to(fa_icon("linkedin"),'#') %>
+                    <%= link_to(fa_icon("pinterest"),'#') %>
+                </div>
+                <div class="col-md-4 wow fadeInLeft" data-wow-delay="1.6s">
+                    <%= image_tag("路飞2.png", class: "img-circle") %>
+                    <h4>B同学</h4>
+                    <b>新晋程序媛</b>
+                    <br>
+                    <b> 自从加入了海盗学院，整个人都惊呆了。物超所值的行动课，竟然同时还是一门目标管理课和热情点燃课，把我其他的线上课学习也都带动起来了。值会票价，太赞了</b>
+                    <br>
+                    <%= link_to(fa_icon("facebook"),'#') %>
+                    <%= link_to(fa_icon("twitter"),'#') %>
+                    <%= link_to(fa_icon("linkedin"),'#') %>
+                    <%= link_to(fa_icon("pinterest"),'#') %>
+                </div>
+                <div class="col-md-4 wow fadeInLeft" data-wow-delay="1.2s">
+                    <%= image_tag("路飞3.png", class: "img-circle") %>
+                    <h4>C同学</h4>
+                    <b>科技企业创始人</b>
+                    <br>
+                    <b> 我是奔着组织来的，在行动课上最大的收获，就是有一群神队友。浓浓的行动氛围，让我对管理团队筛选人才有了灵感</b>
+                    <br>
+                    <%= link_to(fa_icon("facebook"),'#') %>
+                    <%= link_to(fa_icon("twitter"),'#') %>
+                    <%= link_to(fa_icon("linkedin"),'#') %>
+                    <%= link_to(fa_icon("pinterest"),'#') %>
+                </div>
+            </row>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <button class="btn btn-danger">写航海日志</button>
     </div>
-    <br/>
-    <br/>
-    <br/>
-    <button class="btn btn-danger">写航海日志</button>
-</div>
 </div>
 <!-- End Team -->
 <!-- Client 这一部分可以删掉，有点多余-->
@@ -173,7 +184,7 @@
     <div class="container">
         <div class="row">
             <h2 class="wow fadeInUp">联系我们</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s">快来跟我们联系吧</p>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">写下你的</p>
             <div class="col-md-6">
                 <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
                     <span class="input-group-addon" id="sizing-addon1"><%= fa_icon("user") %></span><input type="text" class="form-control" placeholder="Full Name">

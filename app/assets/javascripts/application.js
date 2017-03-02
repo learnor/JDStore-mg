@@ -19,6 +19,7 @@
 //= require bootstrap/carousel
 //= require bootstrap/collapse
 //= require bootstrap/tab
+//= require bootstrap/modal
 //= require wow
 //= require gritter
 //= require_tree .
