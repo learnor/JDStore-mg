@@ -61,8 +61,18 @@
                   <div class="col-xs-10 col-sm-6 col-md-6" style="margin-bottom: 30px;">
                     <%= render_product_image(product) %>
                     <%= product.title %><span style="color:#ef0568;">  ￥<%= product.price %></span>
+                    <% if current_user.favorites.where(product: product).empty? %>
+                    <%= link_to("收藏", favorites_path(product_id: product), method: :post) %>
+                    <% else %>
+                    <%= link_to("取消收藏", favorite_path(product), method: :delete) %>
+                    <% end %>
                   </div>
                 <% end %>
+                <div class=" text-center" style="padding-bottom: 30px;">
+                  <div class="digg_pagination">
+                    <%= will_paginate @products, previous_label: "前一页", next_label: "后一页", page_links: false%>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -75,6 +85,11 @@
                     <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6" style="margin-bottom: 30px;">
                       <%= render_product_image(product) %>
                       <%= product.title %><span style="color:#ef0568;">  ￥<%= product.price %></span>
+                      <% if current_user.favorites.where(product: product).empty? %>
+                      <%= link_to("收藏", favorites_path(product_id: product), method: :post) %>
+                      <% else %>
+                      <%= link_to("取消收藏", favorite_path(product), method: :delete) %>
+                      <% end %>
                     </div>
                   <% end %>
                 </div>

@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   def index
     @categories = Category.order("id DESC")
     @q = Product.ransack(params[:q])
-    @products = @q.result(distinct: true) #Product.order("id DESC")#
+    @products = @q.result(distinct: true).paginate(page: params[:page], per_page: 6) #Product.order("id DESC")#
     @categories.each do |c|
         instance_variable_set("@products_#{c.id}", Product.where(category_id: c.id))
     end
