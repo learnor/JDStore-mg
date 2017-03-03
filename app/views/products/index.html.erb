@@ -62,7 +62,8 @@
                     <%= render_product_image(product) %>
                     <%= product.title %>
                     <% if current_user %>
-                    <span class="pull-right"><% if current_user.favorites.where(product: product).empty? %>
+                    <span class="pull-right">
+                    <% if current_user.favorites.where(product: product).empty? %>
                     <%= link_to("收藏", favorites_path(product_id: product), method: :post) %>
                     <% else %>
                     <%= link_to("取消收藏", favorite_path(product), method: :delete) %>
@@ -88,7 +89,8 @@
                       <%= render_product_image(product) %>
                       <%= product.title %>
                       <% if current_user %>
-                      <span class="pull-right"><% if current_user.favorites.where(product: product).empty? %>
+                      <span class="pull-right">
+                      <% if current_user.favorites.where(product: product).empty? %>
                       <%= link_to("收藏", favorites_path(product_id: product), method: :post) %>
                       <% else %>
                       <%= link_to("取消收藏", favorite_path(product), method: :delete) %>
@@ -101,8 +103,18 @@
             </div>
           <% end %>
         </div>
+        <div class=" text-center" style="padding-bottom: 30px;">
+          <div class="digg_pagination">
+            <%= will_paginate @products, previous_label: "前一页", next_label: "后一页", page_links: false%>
+          </div>
+        </div>
         <!-- End tab-content -->
       </div>
     </div>
+  </div>
+  <div class="text-center ">
+    <br><br><br>
+      <%= link_to("去“一定要看”瞅瞅",change_path, class:"btn btn-lg btn-success") %>
+    <hr>
   </div>
 </div>
