@@ -9,4 +9,7 @@ class WelcomeController < ApplicationController
   def change
 
   end
+  def about
+
+  end
 end

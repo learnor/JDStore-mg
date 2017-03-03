@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     devise_for :users, controllers: { confirmations: 'confirmations' }
     root 'welcome#home'
     get 'change' => 'welcome#change'
+    get 'about' => 'welcome#about'
     get 'sail' => 'welcome#sail'
     resources :products do
         member do
