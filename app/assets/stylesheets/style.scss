@@ -170,13 +170,14 @@ p {
   text-align: center;
   background-color: #fff;
 
- h2, h4 {
+ h2, {
     color: #696969;
     margin: 20px 0;
     font-size: 56px;
   }
 
-  p {
+  p,
+  h4 {
     color: #696969;
     font-size: 28px;
     padding-bottom: 40px;
@@ -204,7 +205,7 @@ p {
 .pricing {
     padding: 50px 0 80px;
     text-align: center;
-    background-color: #2B1F31;
+    background-color: #F5F5F5;
 
     img {
         height: 150px;
@@ -213,7 +214,7 @@ p {
     }
     h2,
     p {
-        color:#fff;
+        color:#696969;
     }
     p {
       padding-bottom: 40px;
@@ -267,7 +268,7 @@ font-size: 28px;
 
     b,h2,h4 {
         margin: 20 0 20px;
-        color: #2B1F31;
+        color: #696969;;
     }
     p {
         color: #737373;
@@ -326,18 +327,18 @@ font-size: 28px;
 .contact {
     padding: 50px 0 80px;
     text-align: center;
-    background-color: #2B1F31;
+    background-color: #F5F5F5;
 
     p {
         padding-bottom: 80px;
-        color: #DBD8E3;
+        color: #696969;
     }
     h2 {
-        color: #DBD8E3;
+        color: #696969;
         margin: 20px 0 20px;
     }
     .input-group {
-        margin-bottom: 25px;
+        margin-bottom: 55px;
     }
         .input-group{
             margin-botton:25px;
