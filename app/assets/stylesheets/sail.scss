@@ -35,7 +35,7 @@
 
 }
 
-//for about packages
+//for about package
 
   .person {
     border: 10px solid transparent;
@@ -51,6 +51,13 @@
 .border1 {
   border-color: 	#0000FF;
 h2 {
-  font-size: 28px
+  font-size: 28px;
+  color: #808080;
 }
+}
+
+.h2style {
+  h2 {
+    color: #808080;
+  }
 }
